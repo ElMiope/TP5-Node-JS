@@ -39,10 +39,10 @@ function contarCiclosCompletos(cuadrantes) {
 function porcentajeCuadrante(cuadrantes) {
     let secuencia = cuadrantes.replace(/ /g, ""); 
     const total = secuencia.length;
-    const porcentajeN = ((secuencia.match(/N/g) || []).length / total * 100).toFixed(2);
-    const porcentajeS = ((secuencia.match(/S/g) || []).length / total * 100).toFixed(2);
-    const porcentajeE = ((secuencia.match(/E/g) || []).length / total * 100).toFixed(2);
-    const porcentajeO = ((secuencia.match(/O/g) || []).length / total * 100).toFixed(2);
+    const porcentajeN = ((secuencia.match(/N/g)).length / total * 100).toFixed(2);
+    const porcentajeS = ((secuencia.match(/S/g)).length / total * 100).toFixed(2);
+    const porcentajeE = ((secuencia.match(/E/g)).length / total * 100).toFixed(2);
+    const porcentajeO = ((secuencia.match(/O/g)).length / total * 100).toFixed(2);
     return [porcentajeN, porcentajeS, porcentajeE, porcentajeO];
 }
 
